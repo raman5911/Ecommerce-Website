@@ -1,0 +1,442 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Alegreya', serif; 
+}
+
+/* Navbar */
+
+.navbar-brand {
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-left: 10px;
+    color: #fff !important;
+}
+.navbar-nav
+{
+    font-size: 22px;
+}
+.nav-link {
+    font-weight: 400;
+    color: #fff !important;
+    padding: 10px 20px !important;
+}
+.nav-link:hover {
+    background-color: #3999ff !important;
+}
+.btn {
+    margin: 0 5px;
+    color: #fff;
+    background-color: #077fff;
+    border: 1px solid #fff;
+    transition: all 0.5s ease;
+    font-size: 23px;
+}
+.btn:hover {
+    background-color: #fff;
+    color: #077fff;
+    font-weight: bold;
+}
+.last {
+    margin-right: 30px;
+}
+
+/* Dropdown */
+.drop-ul-one ul{
+  list-style: none;
+}
+.drop-ul-two ul{
+  list-style: none;
+}
+.dropdown-one .drop-ul-one{
+  display: none;
+  height: 230px;
+  width: 200px;
+  padding: 15px;
+  padding-top: 40px;
+  font-size: 25px;
+  background-color: rgba(255, 255, 255, 0.92);
+  position: absolute;
+  z-index: 1;
+  transition: all 0.5s ease;
+  box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+}
+.dropdown-two .drop-ul-two{
+  display: none;
+  height: 230px;
+  width: 200px;
+  padding: 15px;
+  padding-top: 40px;
+  font-size: 25px;
+  background-color: rgba(255, 255, 255, 0.9);
+  position: absolute;
+  z-index: 1;
+  transition: all 0.5s ease;
+  box-shadow: 20px 20px 15px rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+}
+.drop-ul-one ul li, .drop-ul-two ul li {
+  margin-bottom: 5px;
+  padding: 10px;
+}
+.drop-ul-one ul li a, .drop-ul-two ul li a{
+  display: inline-block;
+width: 150px;
+}
+.drop-ul-one ul li:hover, .drop-ul-two ul li:hover {
+  background-color: rgba(0, 0, 0, 0.15);
+}
+
+/* Slider */
+#demo {
+  margin-top: 60px;
+  margin-bottom: 20px;
+}
+.carousel-inner{
+    padding: 5px;
+    height: 100%;
+    width: 100%;
+  }
+  .ci-one {
+    height: 500px;
+  }
+  .ci-two {
+    height: 500px;
+  }
+  .ci-three {
+    height: 500px;
+  }
+
+  .icon-prev, .icon-next {
+    padding: 0px;
+    font-size: 40px;
+    font-weight: bolder;
+    line-height: 1.2;
+    color: #fff;
+    opacity: 1;
+    background-color: rgb(0, 183, 255);
+    border: 5px solid ;
+    border-radius: 100%;
+    height: 60px;
+    width: 60px;
+    transition: all 0.5s ease-in;
+    position: relative;
+  }
+.icon-next {
+  top: 0.12;
+}
+
+  .carousel-indicators li {
+    background-color: #00000080;
+    border-radius: 100%;
+    height: 15px;
+    width: 15px;
+  }
+
+  /* Content */
+  .fashion, .electronics, .furniture {
+  margin: 15px;
+  padding: 5px;
+  }
+.main, .sub {
+  text-decoration: underline;
+}
+.sub {
+  margin-left: 10px;
+  margin-bottom: 20px;
+}
+.image {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.image img {
+  max-width: 100%;
+  height: auto;
+}
+.electronics-img {
+  width: 1000px;
+}
+.furniture-img
+{
+  width: 1000px;
+}
+.phone img, .laptop img {
+  margin-top: 40px;
+  margin-bottom: 20px;
+  height: 350px;
+}
+.client-one, .client-two {
+  width: 500px;
+  height: 260px;
+  margin: 5px;
+  margin-top: 40px;
+}
+.about {
+  margin-top: 20px;
+}
+
+/* Card */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: 30px 5px;
+  text-align: center;
+  font-family: arial;
+  padding: 5px;
+  transition: all 0.5s ease;
+}
+.card:hover {
+  cursor: pointer;
+  transform: translateY(-10px);
+  box-shadow: 5px 5px 8px 0 rgba(0, 0, 0, 0.8);
+}
+.card img {
+  height: 250px;
+  width: 200px;
+}
+.card h3,.card h5 {
+  margin-top: 10px;
+  color: rgb(43, 157, 165);
+  font-weight: 530;
+  transition: all 0.7s ease;
+}
+.price {
+  color: rgb(255, 166, 0);
+  font-size: 25px;
+  margin-left: 10px;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+.old-price {
+  color: grey;
+  font-size: 18px;
+  margin-left: 3px;
+  margin-top: 5px;
+  text-decoration: line-through;
+}
+.card button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: rgb(53, 189, 199);
+  border-radius: 10px;
+  opacity: 0.7;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+  transition: all 0.7s ease;
+}
+.card button:hover {
+    opacity: 1;
+}
+.fa-star {
+  margin-top: 10px;
+}
+.checked {
+  color: orange;
+}
+
+.stars {
+  display: flex;
+  margin-left: 0; 
+}
+.stars .ml-auto {
+  margin-right: 10px;
+}
+
+
+
+/* Product Slider */
+.slider {
+  padding-left: 20px;
+  /* padding-right: 25px; */
+}
+
+.slick-prev:before {
+  color: rgb(47, 185, 248);
+  font-size: 40px;
+}
+.slick-next:before {
+  color: rgb(47, 185, 248);
+  font-size: 40px;
+  margin-left: 0px;
+}
+.slick-dots li button:before
+    {
+        font-size: 15px;
+    }
+
+
+.fa-truck, .fa-rupee, .fa-comments {
+  /* color: r; */
+  font-size: 50px;
+}
+
+/* Services */
+.service {
+  /* display: flex; */
+  padding: 20px;
+  margin-top: 70px;
+  margin-bottom: 20px;
+  background-color: rgba(44, 235, 206, 0.788);
+  color: #fff;
+}
+.service h5 {
+  color: #fff;
+}
+.sub-icon {
+margin-left: 3px;
+margin-right: 0;
+font-size: 16px;
+}
+
+/* Footer */
+footer {
+  margin-top: 40px;
+  padding: 20px;
+  padding-top: 30px;
+  background-color: #f2f2f2;
+}
+
+/* Footer Icons */
+.fa-home, .fa-phone {
+  font-size: 30px;
+  display: block;
+  margin-bottom: 10px;
+}
+.fa-phone {
+  margin-bottom: 20px;
+}
+.fa-home span, .fa-phone span {
+  margin-left: 10px;
+  font-size: 20px;
+}
+.fa-twitter {
+  font-size: 25px;
+}
+.social {
+  font-size: 25px;
+  margin-left: 10px;
+}
+.branch ul, .extra ul {
+  list-style: none;
+}
+.branch ul li, .extra ul li {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: 20px;
+}
+
+.follow img {
+  height: 200px;
+}
+
+.call {
+margin-top: 70px;
+color: rgb(28, 231, 201);;
+}
+.contact h3, .branch h3, .extra h3 {
+  margin-bottom: 30px;
+}
+.input-grp {
+  display: flex;
+  margin-top: 50px;
+  margin-left: 20px;
+}
+#email {
+  width: 300px;
+  padding: 5px;
+  border: none;
+  outline: aqua;
+}
+#submit {
+  background-color: rgba(35, 201, 201, 0.904);
+  border: none;
+  color: #fff;
+  padding: 10px;
+  font-weight: bold;
+}
+#submit:hover {
+  background-color: rgb(27, 202, 202);
+  cursor: pointer;
+}
+
+/* Payments Icons */
+.icon-img {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.mastercard, .paypal, .amazon, .google {
+  height: 70px;
+}
+.visa {
+  height: 85px;
+}
+.paytm {
+  height: 70px;
+}
+hr {
+  background-color: #000;
+}
+
+@media screen and (max-width: 1200px) {
+  .bed {
+    height: 283px !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .card {
+     margin-left: 100px; 
+  }
+  .carousel-inner{
+    padding: 5px;
+    height: 80%;
+    width: 100%;
+  }
+  .ci-one {
+    height: 300px;
+  }
+  .ci-two {
+    height: 300px;
+  }
+  .ci-three {
+    height: 300px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .card {
+     margin-left: 90px; 
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .card {
+     margin-left: 70px; 
+  }
+}
+
+@media screen and (max-width: 510px) {
+  .card {
+     margin-left: 50px; 
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .card {
+     margin-left: 30px; 
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .card {
+     margin-left: 0px; 
+  }
+}
